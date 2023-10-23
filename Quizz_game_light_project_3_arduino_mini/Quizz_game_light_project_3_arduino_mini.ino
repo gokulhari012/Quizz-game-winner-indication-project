@@ -114,14 +114,12 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   if(mode==3){
-    Serial.println("333");
     testing();
   }
   else{
     chageLightState();
   }
   if(pressed==1){
-    Serial.println();
     send_data(Obuzzer_on);
     previous_time = millis();
     pressed=2;
