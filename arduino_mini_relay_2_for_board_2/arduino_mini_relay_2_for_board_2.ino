@@ -56,74 +56,58 @@ void loop() {
   // put your main code here, to run repeatedly:
   if(Serial.available()>0){
     int data = Serial.read();
-    if(data==17){
-      digitalWrite(O1,LOW);
+    switch(data){
+      case 17:
+        digitalWrite(O1,LOW);
+      case 18:
+        digitalWrite(O2,LOW);
+      case 19:
+        digitalWrite(O3,LOW);
+      case 20:
+        digitalWrite(O4,LOW);
+      case 21:
+        digitalWrite(O5,LOW);
+      case 22:
+        digitalWrite(O6,LOW);
+      case 23:
+        digitalWrite(O7,LOW);
+      case 24:
+        digitalWrite(O8,LOW);
+      case 25:
+        digitalWrite(O9,LOW);
+      case 26:
+        digitalWrite(O10,LOW);
+      case 27:
+        digitalWrite(O11,LOW);
+      case 28:
+        digitalWrite(O12,LOW);
+      case 29:
+        digitalWrite(O13,LOW);
+      case 30:
+        digitalWrite(O14,LOW);
+      case 31:
+        digitalWrite(O15,LOW);
+      case 32:
+        digitalWrite(O16,LOW);
+      case 33:
+        digitalWrite(O16,HIGH);
+      case 0:
+        digitalWrite(O1,HIGH);
+        digitalWrite(O2,HIGH);
+        digitalWrite(O3,HIGH);
+        digitalWrite(O4,HIGH);
+        digitalWrite(O5,HIGH);
+        digitalWrite(O6,HIGH);
+        digitalWrite(O7,HIGH);
+        digitalWrite(O8,HIGH);
+        digitalWrite(O9,HIGH);
+        digitalWrite(O10,HIGH);
+        digitalWrite(O11,HIGH);
+        digitalWrite(O12,HIGH);
+        digitalWrite(O13,HIGH);
+        digitalWrite(O14,HIGH);
+        digitalWrite(O15,HIGH);
+        digitalWrite(O16,HIGH);
     }
-    else if(data==18){
-      digitalWrite(O2,LOW);
-    }
-    else if(data==19){
-      digitalWrite(O3,LOW);
-    }
-    else if(data==20){
-      digitalWrite(O4,LOW);
-    }
-    else if(data==21){
-      digitalWrite(O5,LOW);
-    }
-    else if(data==22){
-      digitalWrite(O6,LOW);
-    }
-    else if(data==23){
-      digitalWrite(O7,LOW);
-    }
-    else if(data==24){
-      digitalWrite(O8,LOW);
-    }
-    else if(data==25){
-      digitalWrite(O9,LOW);
-    }
-    else if(data==26){
-      digitalWrite(O10,LOW);
-    }
-    else if(data==27){
-      digitalWrite(O11,LOW);
-    }
-    else if(data==28){
-      digitalWrite(O12,LOW);
-    }
-    else if(data==29){
-      digitalWrite(O13,LOW);
-    }
-    else if(data==30){
-      digitalWrite(O14,LOW);
-    }
-    else if(data==31){
-      digitalWrite(O15,LOW);
-    }
-    else if(data==32){
-      digitalWrite(O16,LOW);
-    }
-    else if(data==33){
-      digitalWrite(O16,HIGH);
-    }
-    else if(data==0){
-      digitalWrite(O1,HIGH);
-      digitalWrite(O2,HIGH);
-      digitalWrite(O3,HIGH);
-      digitalWrite(O4,HIGH);
-      digitalWrite(O5,HIGH);
-      digitalWrite(O6,HIGH);
-      digitalWrite(O7,HIGH);
-      digitalWrite(O8,HIGH);
-      digitalWrite(O9,HIGH);
-      digitalWrite(O10,HIGH);
-      digitalWrite(O11,HIGH);
-      digitalWrite(O12,HIGH);
-      digitalWrite(O13,HIGH);
-      digitalWrite(O14,HIGH);
-      digitalWrite(O15,HIGH);
-      digitalWrite(O16,HIGH);
-    }
-}
+  }
 }
