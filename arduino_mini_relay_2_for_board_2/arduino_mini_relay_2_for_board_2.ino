@@ -59,38 +59,55 @@ void loop() {
     switch(data){
       case 17:
         digitalWrite(O1,LOW);
+        break;
       case 18:
         digitalWrite(O2,LOW);
+        break;
       case 19:
         digitalWrite(O3,LOW);
+        break;
       case 20:
         digitalWrite(O4,LOW);
+        break;
       case 21:
         digitalWrite(O5,LOW);
+        break;
       case 22:
         digitalWrite(O6,LOW);
+        break;
       case 23:
         digitalWrite(O7,LOW);
+        break;
       case 24:
         digitalWrite(O8,LOW);
+        break;
       case 25:
         digitalWrite(O9,LOW);
+        break;
       case 26:
         digitalWrite(O10,LOW);
+        break;
       case 27:
         digitalWrite(O11,LOW);
+        break;
       case 28:
         digitalWrite(O12,LOW);
+        break;
       case 29:
         digitalWrite(O13,LOW);
+        break;
       case 30:
         digitalWrite(O14,LOW);
+        break;
       case 31:
         digitalWrite(O15,LOW);
+        break;
       case 32:
         digitalWrite(O16,LOW);
+        break;
       case 33:
         digitalWrite(O16,HIGH);
+        break;
       case 0:
         digitalWrite(O1,HIGH);
         digitalWrite(O2,HIGH);
@@ -108,6 +125,7 @@ void loop() {
         digitalWrite(O14,HIGH);
         digitalWrite(O15,HIGH);
         digitalWrite(O16,HIGH);
+        break;
     }
   }
 }
