@@ -32,7 +32,7 @@
 #define pin_TX 21
 
 //configuration
-int speaker_sound_delay = 1000;
+int speaker_sound_delay = 500;
 
 int state = 0;
 int mode = 1;
@@ -243,21 +243,24 @@ void IRAM_ATTR pressed_mode_change(){
 }
 
 void IRAM_ATTR setLightState(int bt_number){
-  pressed=1;
   if(bt_number!=first && bt_number!=second && bt_number!=third){
     if (state==0){
       first = bt_number;
       state=1;
+      pressed=1;
     }
     else if(state==1){
       second = bt_number;
       state=2;
+      if(mode==1)pressed=1;
     }
     else if(state==2){
       third = bt_number;
       state=3;
+      if(mode==1)pressed=1;
     }
   }
+  if(mode==3)pressed=1;
 }
 
 void IRAM_ATTR pressed_I1(){
